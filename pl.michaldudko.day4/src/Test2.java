@@ -6,10 +6,13 @@ public class Test2 {
         switch (z) {
             case 1:
                 x = x+2;
+                System.out.println("Wartość x1 = "+ x);
             case 2: x=x +3;
+                System.out.println("Wartość x2 = "+ x);
             default:
                 x=x+1;
+                System.out.println("Wartość x3 = "+ x);
         }
-        System.out.println("Wartość x = "+ x);
+        System.out.println("Wartość x4 = "+ x);
     }
 }
