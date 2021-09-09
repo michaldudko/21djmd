@@ -7,7 +7,7 @@ class EqualsTester{
         System.out.println("String1: "+ str1);
         System.out.println("String2: "+str2);
         System.out.println("Ten sam obiekt? " + (str1==str2));
-        
+
         str2 = new String(str1);
         System.out.println("String1: "+ str1);
         System.out.println("String2: "+str2);

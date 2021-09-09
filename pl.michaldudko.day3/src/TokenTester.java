@@ -3,7 +3,7 @@ import java.util.StringTokenizer;
     class TokenTester {
 
         public static void main(String[] arguments){
-            StringTokenizer st1, st2;
+            StringTokenizer st1, st2, st3;
 
             String quote1 = "G00G 530,80 -9,98";
         st1 = new StringTokenizer(quote1);
@@ -16,6 +16,7 @@ import java.util.StringTokenizer;
         System.out.println("\nToken 1: "+ st2.nextToken());
         System.out.println("Token 2: "+ st2.nextToken());
         System.out.println("Token 3: "+ st2.nextToken());
+
 
         }
 }
