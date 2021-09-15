@@ -39,3 +39,36 @@ public class PrimeThreads {
         System.out.println("Liczba pierwsza " + finder.target + " to " + finder.prime);
     }
 }
+
+public class PrimeThreads {
+    public static void main(String[] arguments) {
+        try {
+            PrimeFinder[] finder = new PrimeFinder[arguments.length];
+            for (int i = 0; i < arguments.length; i++) {
+                long count = Long.parseLong(arguments[i]);
+                finder[i] = new PrimeFinder(count);
+                System.out.println("Szukam liczby pierwszej " + count);
+            }
+        } catch (NumberFormatException nfe) {
+            System.out.println("Błąd: " + nfe);
+        }
+        boolean complete = false;
+        PrimeFinder[] finder;
+        while (!complete) {
+            complete = true;
+            for (int j = 0; j < finder.length; j++) {
+                if (!finder[j].finished)
+                    complete = false;
+            }
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException ie) {
+                // nic nie rób
+            }
+        }
+        for (int j = 0; j < finder.length; j++) {
+            System.out.println("Liczba pierwsza " + finder[j].target
+                    + " to " + finder[j].prime);
+        }
+    }
+}
