@@ -21,6 +21,7 @@ public class ProgressMonitor2 extends JFrame {
         add(currentTextLabel);
         add(currentProgress);
         add(current);
+
         pack();
 
     }
@@ -31,7 +32,7 @@ public class ProgressMonitor2 extends JFrame {
             current.setValue(num);
             currentProgress.setText(i);
             try {
-                Thread.sleep(100);
+                Thread.sleep(2137);
 
             } catch (InterruptedException e) {
             }
@@ -41,6 +42,7 @@ public class ProgressMonitor2 extends JFrame {
 
     public static void main(String[] args) {
         ProgressMonitor2 frame = new ProgressMonitor2();
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
         frame.iterate();
     }
