@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Plik jnlp dla maina-->
+<jnlp codebase="http://cadenhead.org/book/java-21-days/java" href="PageData.jnlp">
+    <information>
+        <title>Aplikacja PageData</title>
+        <vendor>Michał Dudko</vendor>
+        <homepage href="http://www.java21days.com"/>
+        <icon href="pagedataicon.gif"/>
+        <offline-allowed/>
+    </information>
+    <resources>
+        <j2se version="1.8"/>
+        <jar href="Pagedata.jar"/>
+    </resources>
+    <security>
+        <j2ee-application-client-permissions/>
+    </security>
+</jnlp>
